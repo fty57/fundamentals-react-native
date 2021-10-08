@@ -1,21 +1,14 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Text } from 'react-native';
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+  return <Text>Primeiro Componente</Text>
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+ 
+// Notas:
+// SafeAreaView - Permite colocar o texto e componentes dentro de uma área seguda no IOS
+// Ele pega o código JSX - e vai mudá-los em componentes HTML, a partir de geração automática de código
+// Se você for usar um JSX, você deve importar o react
+// Existem componentes funcionais e componentes baseados em classes
+// JavaScript é centrado em função
