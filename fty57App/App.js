@@ -1,8 +1,13 @@
 import React from 'react';
-import { Text } from 'react-native';
+import { View } from 'react-native';
+import Primeiro from "./src/components/Primeiro"
 
 export default function App() {
-  return <Text>Primeiro Componente</Text>
+  return (
+    <View>
+      <Primeiro/>
+    </View> 
+  )
 }
 
  
@@ -12,3 +17,5 @@ export default function App() {
 // Se você for usar um JSX, você deve importar o react
 // Existem componentes funcionais e componentes baseados em classes
 // JavaScript é centrado em função
+// "Tags" mais rigososas com o seu fechamento
+// {/*<Primeiro/>*/} Dessa maneira você comenta um componente
