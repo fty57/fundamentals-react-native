@@ -1,12 +1,12 @@
 import React from 'react';
-import { View } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 
 import CompPadrao, { Comp1, Comp2} from "./src/components/Multi.js"
 import Primeiro from "./src/components/Primeiro"
 
 export default function App() {
   return (
-    <View>
+    <View style={style.App}>
       <CompPadrao/>
       <Comp1/>
       <Comp2/>
@@ -15,6 +15,14 @@ export default function App() {
   )
 }
 
+
+const style = StyleSheet.create({
+  App: {
+    flexGrow: 1,
+    justifyContent: "center",
+    alignItems : "center",
+  },
+})
  
 // Notas:
 // SafeAreaView - Permite colocar o texto e componentes dentro de uma área seguda no IOS
@@ -24,3 +32,6 @@ export default function App() {
 // JavaScript é centrado em função
 // "Tags" mais rigososas com o seu fechamento
 // {/*<Primeiro/>*/} Dessa maneira você comenta um componente
+// Eu criei uma constante no JavaScript, então preciso chamar ela lá dentro de um par de chaves
+// justifyContent = Centraliza com base no eixo vertical - eixo principal
+// alignItems = Centraliza com base no eixo horizontal - eixo cruzado
