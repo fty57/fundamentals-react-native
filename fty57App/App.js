@@ -1,16 +1,19 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
 
-import MinMax from "./src/components/MinMax"
+import Aleatorio from "./src/components/A"
+//import MinMax from "./src/components/MinMax"
 //import CompPadrao, { Comp1, Comp2} from "./src/components/Multi.js"
 //import Primeiro from "./src/components/Primeiro"
+
 
 
 export default function App() {
   return (
     <View style={style.App}>
-      <MinMax min={3} max ={20}/>
-      <MinMax min={2} max ={85}/>
+
+{/*       <MinMax min={3} max ={20}/>
+      <MinMax min={2} max ={85}/> */}
 {/*   <CompPadrao/>
       <Comp1/>
       <Comp2/>
