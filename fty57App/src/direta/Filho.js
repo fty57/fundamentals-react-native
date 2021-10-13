@@ -11,3 +11,6 @@ export default props =>{
          
     )
 }
+
+// Quando for ter reuso, é interessante usar essa prática
+// Um componente muito grande, é mais interessante em quebrar em pequenas partes

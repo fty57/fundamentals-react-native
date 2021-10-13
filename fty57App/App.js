@@ -1,7 +1,8 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
 
-import Pai from "./src/indireta/Pai"
+import ContadorV2 from "./src/contador/ContadorV2"
+//import Pai from "./src/indireta/Pai"
 //import Pai from "./src/direta/Pai"
 //import Contador from "./src/components/Contador"
 //import Botao from './src/components/Botao'
@@ -16,8 +17,9 @@ import Pai from "./src/indireta/Pai"
 export default function App() {
   return (
     <View style={style.App}>
-      <Pai/>
+      <ContadorV2/>
       {/* 
+      <Pai/>
       <Pai/>
       <Contador inicial={100} passo={13}/>
       <Botao/>
