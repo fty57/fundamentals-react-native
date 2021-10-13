@@ -1,7 +1,8 @@
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
+import { SafeAreaView, StyleSheet } from 'react-native';
 
-import Diferenciar from "./src/components/Diferenciar"
+import ParImpar from "./src/components/ParImpar"
+//import Diferenciar from "./src/components/Diferenciar"
 //import ContadorV2 from "./src/contador/ContadorV2"
 //import Pai from "./src/indireta/Pai"
 //import Pai from "./src/direta/Pai"
@@ -17,9 +18,10 @@ import Diferenciar from "./src/components/Diferenciar"
 
 export default function App() {
   return (
-    <View style={style.App}>
-      <Diferenciar/>
+    <SafeAreaView style={style.App}>
+      <ParImpar num={3}/>
       {/* 
+      <Diferenciar/>
       <ContadorV2/>
       <Pai/>
       <Pai/>
@@ -33,7 +35,7 @@ export default function App() {
       <Comp1/>
       <Comp2/>
       <Primeiro/>  */}
-    </View> 
+    </SafeAreaView> 
   )
 }
 
