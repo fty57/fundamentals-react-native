@@ -1,7 +1,8 @@
 import React from 'react';
 import { SafeAreaView, StyleSheet , Text } from 'react-native';
+import FlexboxV3 from './src/layout/FlexboxV3';
 
-import FlexboxV2 from './src/layout/FlexboxV2';
+//import FlexboxV2 from './src/layout/FlexboxV2';
 //import FlexboxV1 from './src/layout/FlexboxV1';
 //import Quadrado from './src/layout/Quadrado';
 //import DigiteSeuNome from './src/DigiteSeuNome';
@@ -28,8 +29,9 @@ import FlexboxV2 from './src/layout/FlexboxV2';
 export default function App() {
   return (
     <SafeAreaView style={style.App}>
-      <FlexboxV2/>
+      <FlexboxV3/>
       {/* 
+      <FlexboxV2/>
       <FlexboxV1/>
       <DigiteSeuNome/>
       <ListaProdutosV2/>
