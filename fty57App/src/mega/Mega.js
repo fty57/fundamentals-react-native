@@ -1,6 +1,8 @@
 import React, { Component } from "react"
-import { Text, TextInput, Button } from "react-native"
+import { Text, TextInput, Button, View, StyleSheet} from "react-native"
 import style from "../components/estilo"
+
+import MegaNumero from "./MegaNumero"
 
 export default class Mega extends Component {
 
@@ -19,15 +21,22 @@ export default class Mega extends Component {
           return nums.includes(novo) ? this.gerarNumeroNaoContido(nums) : novo
      }
 
-/*      gerarNumeros = () =>{
+     gerarNumeros = () =>{
           const numeros = Array(this.state.qtdeNumeros)
                .fill()
                .reduce(nums => [...nums, this.gerarNumeroNaoContido(nums)], [])
                .sort((a,b) => a - b)
           this.setState({numeros})
-     } */
+     }
+
+     exibirNumeros = () =>{
+          const nums = this.state.numeros
+          return nums.map((num => {
+               return <MegaNumero key= {num} num={num}/>
+          }))
+     }
      
-     gerarNumeros = () =>{
+/*      gerarNumeros = () =>{
           const {qtdeNumeros} = this.state
           const numeros=[]
           for(let i = 0; i<qtdeNumeros; i++) {
@@ -36,7 +45,7 @@ export default class Mega extends Component {
 
           numeros.sort((a,b) => a - b)
           this.setState({numeros})
-     }
+     } */
 
      render() {
           return (
@@ -56,13 +65,22 @@ export default class Mega extends Component {
                          title="Gerar"
                          onPress={this.gerarNumeros}
                     />
-                    <Text>
-                         {this.state.numeros.join(",")}
-                    </Text>
+                    <View style={styles.flexViewContainer}>
+                         {this.exibirNumeros()}
+                    </View>
+                    
                </>
           )
      }
 }
+const styles = StyleSheet.create({
+     flexViewContainer: {
+          marginTop: 20,
+          flexDirection: 'row',
+          flexWrap: 'wrap',
+          justifyContent: "center"
+     }
+})
 
 // render() - Função responsável por renderizar o seu componente na tela
 // Nesse conceito de classe, você utiliza o "this"
