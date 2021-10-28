@@ -8,11 +8,11 @@ export default props => {
                justifyContent: "center",
                alignItems: "center",
                padding: 20,
-               backgroundColor: props.corFundo || "#000" 
+               backgroundColor: props.corFundo || "#000"
           }}>
                <Text style={{
                     fontSize: 50,
-                    color: props.corTexto || "#FFF" 
+                    color: props.corTexto || "#FFF"
                }}>
                     {props.children}
                </Text>
