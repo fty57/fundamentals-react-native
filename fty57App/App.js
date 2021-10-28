@@ -1,23 +1,18 @@
 import React from 'react';
-import { SafeAreaView, StyleSheet , Text } from 'react-native';
+import { SafeAreaView } from 'react-native';
+import TextoCentral from "./src/components2/TextoCentral"
+
 
 export default function App() {
   return (
-    <SafeAreaView style={style.App}>
-
+    <SafeAreaView style={{flex: 1}}>
+      <TextoCentral>APP</TextoCentral>
     </SafeAreaView> 
   )
 }
 
 
-const style = StyleSheet.create({
-  App: {
-    flexGrow: 1,
-    justifyContent: "center",
-    alignItems : "center",
-    padding: 20
-  },
-})
+
  
 // Notas:
 // SafeAreaView - Permite colocar o texto e componentes dentro de uma área seguda no IOS
