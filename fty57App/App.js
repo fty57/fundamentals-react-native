@@ -1,12 +1,15 @@
 import React from 'react';
 import { SafeAreaView } from 'react-native';
-import TextoCentral from "./src/components2/TextoCentral"
-
+import TelaA from "./src/views/TelaA"
+import TelaB from "./src/views/TelaB"
+import TelaC from './src/views/TelaC';
 
 export default function App() {
   return (
     <SafeAreaView style={{flex: 1}}>
-      <TextoCentral>APP</TextoCentral>
+      <TelaA/>
+      <TelaB/>
+      <TelaC/>
     </SafeAreaView> 
   )
 }
