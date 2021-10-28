@@ -1,16 +1,15 @@
 import React from 'react';
-import { SafeAreaView } from 'react-native';
-import TelaA from "./src/views/TelaA"
-import TelaB from "./src/views/TelaB"
-import TelaC from './src/views/TelaC';
+import { SafeAreaView, Text } from 'react-native';
+import {NavigationContainer} from "@react-navigation/native"
+import Stack from "./src/navegacao/Stack"
 
 export default function App() {
   return (
     <SafeAreaView style={{flex: 1}}>
-      <TelaA/>
-      <TelaB/>
-      <TelaC/>
-    </SafeAreaView> 
+      <NavigationContainer>
+        <Stack />
+      </NavigationContainer>
+    </SafeAreaView>
   )
 }
 
