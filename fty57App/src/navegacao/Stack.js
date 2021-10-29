@@ -22,7 +22,8 @@ export default props => {
                </Stack.Screen>
                <Stack.Screen name="TelaB">
                     {props => (
-                         <PassoStack {...props} voltar avancar="TelaC">
+                         <PassoStack {...props} voltar avancar="TelaC" 
+                         avancarParams={{numero: 2021}}>
                               <TelaB />
                          </PassoStack>
                     )}
@@ -30,7 +31,7 @@ export default props => {
                <Stack.Screen name="TelaC">
                     {props => (
                          <PassoStack {...props} voltar avancar="TelaC">
-                              <TelaC />
+                              <TelaC {...props}/>
                          </PassoStack>
                     )}
                </Stack.Screen>
@@ -38,3 +39,5 @@ export default props => {
      )
 
 }
+
+// O name é a rota, se você não personalizar ele vai usar o título
