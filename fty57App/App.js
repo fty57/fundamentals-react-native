@@ -1,13 +1,15 @@
 import React from 'react';
 import { SafeAreaView, Text } from 'react-native';
-import {NavigationContainer} from "@react-navigation/native"
+import { NavigationContainer } from "@react-navigation/native"
 import Stack from "./src/navegacao/Stack"
+import Tab from "./src/navegacao/Tab"
 
 export default function App() {
   return (
-    <SafeAreaView style={{flex: 1}}>
+    <SafeAreaView style={{ flex: 1 }}>
       <NavigationContainer>
-        <Stack />
+        <Tab />
+        {/* <Stack /> */}
       </NavigationContainer>
     </SafeAreaView>
   )
@@ -15,7 +17,7 @@ export default function App() {
 
 
 
- 
+
 // Notas:
 // SafeAreaView - Permite colocar o texto e componentes dentro de uma área seguda no IOS
 // Ele pega o código JSX - e vai mudá-los em componentes HTML, a partir de geração automática de código
