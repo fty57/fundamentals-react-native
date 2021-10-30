@@ -1,14 +1,17 @@
 import React from 'react';
 import { SafeAreaView, Text } from 'react-native';
 import { NavigationContainer } from "@react-navigation/native"
-import Stack from "./src/navegacao/Stack"
-import Tab from "./src/navegacao/Tab"
+
+import Drawer from './src/navegacao/Drawer';
+//import Stack from "./src/navegacao/Stack"
+//import Tab from "./src/navegacao/Tab"
 
 export default function App() {
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <NavigationContainer>
-        <Tab />
+        <Drawer/>
+        {/* <Tab /> */}
         {/* <Stack /> */}
       </NavigationContainer>
     </SafeAreaView>
