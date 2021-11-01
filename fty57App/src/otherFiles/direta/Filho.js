@@ -1,6 +1,6 @@
 import React from 'react'
 import {Text} from 'react-native'
-import Estilo from "../components/estilo"
+import Estilo from "../../components/estilo"
 
 export default props =>{
     return (

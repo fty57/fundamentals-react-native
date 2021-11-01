@@ -1,6 +1,6 @@
 import React from "react"
 import {Text, View, StyleSheet} from "react-native"
-import styles from "../components/estilo"
+import styles from "../../components/estilo"
 
 export default ({num}) => {
      return(
