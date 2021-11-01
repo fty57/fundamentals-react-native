@@ -4,7 +4,11 @@ import { Text, TextInput, View, StyleSheet, Button } from 'react-native'
 
 
 export default () => {
-     const [number, setNumber] = useState(0);
+     const [number, setNumber] = useState(0)
+
+     function add(num) {
+          return setNumber(number + num)
+     }
 
      return (
           <View>
@@ -12,14 +16,15 @@ export default () => {
                <TextInput
                     style={styles.input}
                     onChangeText={(newNumber) => {
-                         return setNumber(number + newNumber);
+                         const num = parseInt(newNumber);
+                         return add(num);
                     }}
                />
 
                <Text style={styles.textShow}>{`O novo número é ${number}`}</Text>
 
-               <Button 
-                    onPress={() => {setNumber(0)}}
+               <Button
+                    onPress={() => { setNumber(0) }}
                     title="Limpar"
                     color="#841584"
                />
@@ -34,7 +39,7 @@ const styles = StyleSheet.create({
           borderWidth: 1,
           padding: 10,
      },
-     textShow : {
+     textShow: {
           fontSize: 20,
           margin: 12,
      },
