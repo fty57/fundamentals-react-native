@@ -10,6 +10,7 @@ export default () => {
           return setNumber(number + num)
      }
 
+     // Comentado
      return (
           <View>
 
