@@ -1,11 +1,11 @@
 import React from 'react';
-import { SafeAreaView, StyleSheet, TextInput } from 'react-native';
-import Collections from './src/meusComponentes/CollectionCity'
+import { SafeAreaView, StyleSheet} from 'react-native';
+import CollectionsCity from './src/meusComponentes/CollectionCity'
 
 export default function App() {
   return (
     <SafeAreaView style={styles.center}>
-      <Collections
+      <CollectionsCity/>
     </SafeAreaView>
   )
 }
