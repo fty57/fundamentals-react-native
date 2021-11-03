@@ -1,14 +1,11 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { SafeAreaView, StyleSheet, TextInput } from 'react-native';
-import MeuText from './src/meusComponentes/MeuText';
-//import IMC from './src/meusComponentes/IMC';
-
-
+import Collections from './src/meusComponentes/CollectionCity'
 
 export default function App() {
   return (
     <SafeAreaView style={styles.center}>
-      <MeuText/>
+      <Collections
     </SafeAreaView>
   )
 }
