@@ -8,8 +8,22 @@ export default props => {
      const [limCount, setLimCount] = useState(0)
      const [juaCount, setJuaCount] = useState(0)
 
+     var auxMax = 0;
+     var auxMin = 0;
+
+     function compare(){
+          if(forCount > qxdCount){
+               auxMax = forCount;
+          }
+     }
+
+     // forCount tem valor 0
+     console.warn(forCount)
+     console.warn(auxMax)
+
      return (
           <View>
+               
                <Button
                     onPress={() => setForCount(forCount + 1)}
                     title="Fortaleza"
@@ -52,6 +66,19 @@ export default props => {
                     </Text>
                </View>
 
+               <View style={styles.output}>
+                    <Text style={styles.txtG}>MAIS VOTADA(s): </Text>
+                    <Text style={styles.txtG}>MENOS VOTADA(s): </Text>
+               </View>
+
+               <Button
+                    title="Teste"
+                    onPress={() => compare()}
+               />
+
+
+                    
+               
           </View>
 
      )
