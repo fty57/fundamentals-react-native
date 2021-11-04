@@ -44,7 +44,7 @@ export default props => {
                     </Text>
 
                     <Text style={styles.txtG}>
-                         Limoeiro: {limCount}
+                         Limoeiro do Norte: {limCount}
                     </Text>
 
                     <Text style={styles.txtG}>
