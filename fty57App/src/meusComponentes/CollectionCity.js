@@ -8,42 +8,35 @@ export default props => {
      const [limCount, setLimCount] = useState(0)
      const [juaCount, setJuaCount] = useState(0)
 
-     var auxMax = 0;
-     var auxMin = 0;
+     
+     let auxMax = 0;
+     let auxMin = 0;
 
-     function compare(){
-          if(forCount > qxdCount){
-               auxMax = forCount;
-          }
-     }
-
-     // forCount tem valor 0
      console.warn(forCount)
-     console.warn(auxMax)
 
      return (
           <View>
                
                <Button
-                    onPress={() => setForCount(forCount + 1)}
+                    onPress={() => {return setForCount(forCount + 1)}}
                     title="Fortaleza"
                     color="#E1810E"
                />
 
                <Button
-                    onPress={() => setQxdCount(qxdCount + 1)}
+                    onPress={() => {return setQxdCount(qxdCount + 1)}}
                     title="Quixadá"
                     color="#E020C3"
                />
 
                <Button
-                    onPress={() => setLimCount(limCount + 1)}
+                    onPress={() => {return setLimCount(limCount + 1)}}
                     title="Limoeiro"
                     color="#2F3EE0"
                />
 
                <Button
-                    onPress={() => setJuaCount(juaCount + 1)}
+                    onPress={() => {return setJuaCount(juaCount + 1)}}
                     title="Juazeiro"
                     color="#2DE055"
                />
@@ -67,17 +60,14 @@ export default props => {
                </View>
 
                <View style={styles.output}>
-                    <Text style={styles.txtG}>MAIS VOTADA(s): </Text>
-                    <Text style={styles.txtG}>MENOS VOTADA(s): </Text>
+                    <Text style={styles.txtG}>MAIS VOTADA(s): {auxMax}</Text>
+                    <Text style={styles.txtG}>MENOS VOTADA(s): {auxMin}</Text>
                </View>
 
                <Button
                     title="Teste"
-                    onPress={() => compare()}
-               />
-
-
-                    
+                    onPress={() => console.warn(compare())}
+               />   
                
           </View>
 
