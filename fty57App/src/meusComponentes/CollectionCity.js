@@ -7,13 +7,9 @@ export default props => {
      const [qxdCount, setQxdCount] = useState(0)
      const [limCount, setLimCount] = useState(0)
      const [juaCount, setJuaCount] = useState(0)
-
      
-     let auxMax = 0;
-     let auxMin = 0;
-
-     console.warn(forCount)
-
+     // Que coisa chata :/
+     
      return (
           <View>
                
@@ -66,13 +62,17 @@ export default props => {
 
                <Button
                     title="Teste"
-                    onPress={() => console.warn(compare())}
+                    onPress={() => console.warn(compareFor())}
                />   
+
+               {console.warn(auxMax, auxMin)}
                
           </View>
 
-     )
+     )     
+     
 }
+
 
 const styles = StyleSheet.create({
      output : {
