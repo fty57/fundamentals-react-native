@@ -8,16 +8,21 @@ export default props => {
 
      return (
           <View style={styles.container}>
-               <TouchableHighlight onPress={onPress}>
+               <TouchableHighlight onPress={onPress} underlayColor='red'>
                     <View style={styles.button}>
-                         <Text>Touch Here</Text>
+                         <Text>RED</Text>
                     </View>
                </TouchableHighlight>
-               <View style={styles.countContainer}>
-                    <Text style={styles.countText}>
-                         {count || null}
-                    </Text>
-               </View>
+               <TouchableHighlight  onPress={onPress} underlayColor='green'>
+                    <View style={styles.button}>
+                         <Text>GREEN</Text>
+                    </View>
+               </TouchableHighlight>
+               <TouchableHighlight  onPress={onPress} underlayColor='blue'>
+                    <View style={styles.button}>
+                         <Text>BLUE</Text>
+                    </View>
+               </TouchableHighlight>
           </View>
      );
 }
@@ -42,3 +47,6 @@ const styles = StyleSheet.create({
           color: "#FF00FF"
      }
 });
+
+// Ao pressionar o botão o underlayColor chamado, responsável pela cor da camada de toque
+// Se você não tiver a função onPress o botão não passa de uma caixa cinza
