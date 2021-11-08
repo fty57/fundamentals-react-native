@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { TouchableHighlight, View, StyleSheet, Text } from 'react-native'
+import { TouchableHighlight, View, StyleSheet, Text} from 'react-native'
 
 
 export default props => {
