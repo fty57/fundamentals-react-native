@@ -1,11 +1,12 @@
 import React from 'react';
 import { SafeAreaView, StyleSheet} from 'react-native';
-import CollectionsCity from './src/meusComponentes/CollectionCity'
+import MyButtons from './src/meusComponentes/MyButtons';
+
 
 export default function App() {
   return (
     <SafeAreaView style={styles.center}>
-      <CollectionsCity/>
+      <MyButtons/>
     </SafeAreaView>
   )
 }
