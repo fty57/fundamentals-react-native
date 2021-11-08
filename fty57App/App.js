@@ -1,13 +1,11 @@
 import React from 'react';
-import { SafeAreaView, StyleSheet} from 'react-native';
-import MyScroll from './src/meusComponentes/MyScroll';
-//import MyPressable from './src/meusComponentes/MyPressable';
-import Touch from './src/meusComponentes/Touch';
+import { SafeAreaView, StyleSheet } from 'react-native';
+import MyFlatList from './src/meusComponentes/MyFlatList'
 
 
 export default function App() {
   return (
-    <MyScroll/>
+    <MyFlatList/>
   )
 }
 
