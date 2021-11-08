@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { TouchableHighlight, View, StyleSheet, Text} from 'react-native'
 
-
 export default props => {
      const [count, setCount] = useState(0);
      const onPress = () => setCount(count + 1);

@@ -12,3 +12,5 @@ export default props => {
           </View>
      )
 }
+
+// O button você tem que colocar o estilo por fora

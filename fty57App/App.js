@@ -1,13 +1,13 @@
 import React from 'react';
 import { SafeAreaView, StyleSheet} from 'react-native';
-import MyPressable from './src/meusComponentes/MyPressable';
+import MyScroll from './src/meusComponentes/MyScroll';
+//import MyPressable from './src/meusComponentes/MyPressable';
+import Touch from './src/meusComponentes/Touch';
 
 
 export default function App() {
   return (
-    <SafeAreaView style={styles.center}>
-      <MyPressable/>
-    </SafeAreaView>
+    <MyScroll/>
   )
 }
 
