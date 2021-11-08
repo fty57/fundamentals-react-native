@@ -1,12 +1,12 @@
 import React from 'react';
 import { SafeAreaView, StyleSheet} from 'react-native';
-import MyButtons from './src/meusComponentes/MyButtons';
+import Touch from './src/meusComponentes/Touch';
 
 
 export default function App() {
   return (
     <SafeAreaView style={styles.center}>
-      <MyButtons/>
+      <Touch/>
     </SafeAreaView>
   )
 }
