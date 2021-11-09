@@ -1,14 +1,14 @@
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
-import MyTextInput from './src/meusComponentes/MyTextInput'
+import { StyleSheet } from 'react-native';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import CryptoHeader from './src/nftComponents/CryptoHeader';
 
 
 export default function App() {
   return (
-    <View style={styles.center}>
-      <MyTextInput/>
-    </View>
-    
+    <SafeAreaProvider>
+      <CryptoHeader/>
+    </SafeAreaProvider>
   )
 }
 
