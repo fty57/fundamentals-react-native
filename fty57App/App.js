@@ -1,11 +1,14 @@
 import React from 'react';
-import { SafeAreaView, StyleSheet } from 'react-native';
-import MyFlatList from './src/meusComponentes/MyFlatList'
+import { View, StyleSheet } from 'react-native';
+import MyTextInput from './src/meusComponentes/MyTextInput'
 
 
 export default function App() {
   return (
-    <MyFlatList/>
+    <View style={styles.center}>
+      <MyTextInput/>
+    </View>
+    
   )
 }
 
