@@ -1,5 +1,6 @@
 import Home from './Home'
 import About from './About'
+import AddUser from './AddUser'
 
 import React from 'react'
 import { NavigationContainer } from '@react-navigation/native'
@@ -11,8 +12,13 @@ export default function Routes(){
      return(
           <NavigationContainer>
                <Stack.Navigator
-                    initialRouteName='About'
+                    initialRouteName='User'
                >
+                    <Stack.Screen
+                         name='User'
+                         component={AddUser}
+                         options={{title:'Tela Usuário'}}
+                    />
                     <Stack.Screen
                          name='Home'
                          component={Home}
