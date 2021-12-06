@@ -1,13 +1,34 @@
 import React, { useState } from 'react';
 import { View, Text, Button, TextInput, ScrollView, StyleSheet } from 'react-native';
 
+import firebase from '../firebase/firebase-config'
+
 export default AddUser = () => {
      const initialState = { name: '', email: '', phone: '' }
      const [state, setState] = useState(initialState)
 
-     const addNewUser = () => {
+     /*const addNewUser = () => {
           // Essa é a função que vai ser utilizada para comunicar com o firebase
           console.log(state);
+     }*/
+
+     // Toda vez que você usa um async você precisa de um await
+     // Espere minha aplicação concluir para você ir adiante
+
+     const addNewUser = async () => {
+          try{
+               await firebase.db
+               .collection('users')
+               .add({
+                    name: state.name,
+                    email: state.email,
+                    phone: state.phone
+               })
+               console.log('OK')
+               // Navegaria para a listagem de usuários
+          }catch(error){
+               console.log(error);
+          }
      }
 
      const handleChangeText = (value, string) => {
